@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls-Royce Toys - Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-round">
+                <img src="img/logo.png" alt="Rolls-Royce Logo" class="logo">
+            </div>
+            <h1>ROLLS-ROYCE HERITAGE COLLECTION</h1>
+            <div class="logo-round">
+                <img src="img/name.png" alt="Rolls-Royce Name" class="logo">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="specifications.html">Specifications</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Order Your Rolls-Royce Toy</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required>
+                <option value="">Choose a product</option>
+                <option value="mini-phantom">Mini Phantom</option>
+                <option value="ghost-rider">Ghost Rider</option>
+                <option value="cullinan-explorer">Cullinan Explorer</option>
+                <option value="dawn-adventure">Dawn Adventure</option>
+                <option value="wraith-explorer">Wraith Explorer</option>
+                <option value="sweptail-luxury">Sweptail Luxury</option>
+                <option value="black-badge">Black Badge</option>
+                <option value="phantom-coupe">Phantom Coupe</option>
+                <option value="Cullinan Luxury">Cullinan Luxury</option>
+                <option value="silver-shadow">Silver Shadow</option>
+                <option value="dawn-sunset">Phantom VIP</option>
+                <option value="black-badge">Dawn Sunset</option>
+                <option value="wraith-luxury">Wraith Luxury</option>
+                <option value="sweptail-elite">Sweptail Elite</option>
+                <option value="black-badge-premium">Black Badge Premium</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rolls-Royce Toys. All rights reserved.</p>
+    </footer>
+</body>
+</html>
