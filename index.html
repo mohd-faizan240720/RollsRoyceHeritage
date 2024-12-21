@@ -4,10 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Rolls-Royce Toys</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #eef2f3, #d9e3f0);
+            color: #333;
+        }
+
+        header {
+            background: #001f3f;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #001f3f;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section h2, .section h3 {
+            color: #0d47a1;
+        }
+
+        .section p {
+            line-height: 1.6;
+            font-size: 1rem;
+            margin: 15px 0;
+        }
+
+        .vision-section, .employees-section, .features-section, .welcome-section, .legacy-section, .product-section {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-section ul {
+            list-style: disc;
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .features-section li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: #001f3f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .animate {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="animate">
         <div class="header-content">
             <div class="logo-round">
                 <img src="img/logo.png" alt="Rolls-Royce Logo" class="logo">
@@ -28,23 +164,23 @@
         </ul>
     </nav>
     <main>
-        <section class="vision-section">
-                <h2>OUR VISION</h2>
-                <p>At Rolls-Royce Toys, we are dedicated to bringing the spirit of innovation, luxury, and precision to every toy we create. Our vision is to inspire young minds by capturing the elegance and sophistication of the iconic Rolls-Royce cars. We aim to deliver toys that are not only beautiful but also educational, fostering a love for craftsmanship and excellence.</p>
-            </section>
-        <section class="welcome-section">
+        <div class="section vision-section animate">
+            <h2>OUR VISION</h2>
+            <p>At Rolls-Royce Toys, we are dedicated to bringing the spirit of innovation, luxury, and precision to every toy we create. Our vision is to inspire young minds by capturing the elegance and sophistication of the iconic Rolls-Royce cars. We aim to deliver toys that are not only beautiful but also educational, fostering a love for craftsmanship and excellence.</p>
+        </div>
+        <div class="section welcome-section animate">
             <h2>WELCOME TO THE STORE</h2>
             <p>Rolls-Royce is luxury, precision engineering, and iconic design.</p>
-        </section>
-        <section class="legacy-section">
+        </div>
+        <div class="section legacy-section animate">
             <h3>A LEGACY OF EXCELLENCE</h3>
             <p>Rolls-Royce has always been a brand that stands apart in the world of automotive design.</p>
-        </section>
-        <section class="product-section">
+        </div>
+        <div class="section product-section animate">
             <h3>ROLLS-ROYCE TOYS: BRINGING THE LEGACY TO LIFE</h3>
             <p>Rolls-Royce Toys attempts to capture the essence of these great cars in miniature.</p>
-        </section>
-         <section class="features-section">
+        </div>
+        <div class="section features-section animate">
             <h3>FEATURES OF OUR PRODUCTS</h3>
             <ul>
                 <li>Authentic Design</li>
@@ -53,12 +189,12 @@
                 <li>Educational Value</li>
                 <li>Luxury-Inspired Craftsmanship</li>
             </ul>
-        </section>
-            <section class="employees-section">
-                <h3>MEET OUR TEAM</h3>
-                <p>Our team is composed of passionate individuals dedicated to bringing the finest Rolls-Royce miniature cars to life. From designers to engineers, every team member plays a crucial role in ensuring that each product embodies the excellence
-                <p>We are a diverse team of 50 talented individuals who work together to create products that exceed expectations.</p>
-            </section>
+        </div>
+        <div class="section employees-section animate">
+            <h3>MEET OUR TEAM</h3>
+            <p>Our team is composed of passionate individuals dedicated to bringing the finest Rolls-Royce miniature cars to life. From designers to engineers, every team member plays a crucial role in ensuring that each product embodies excellence.</p>
+            <p>We are a diverse team of 50 talented individuals who work together to create products that exceed expectations.</p>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Rolls-Royce Toys. All rights reserved.</p>
